@@ -54,7 +54,7 @@ const ChartColumn = styled(Div100vh)`
 
 const XRow = styled(Flex)`
   ${({ theme }) => `
-    padding: 0 ${theme.space.md};
+    padding: ${theme.space.md};
     height: ${theme.space.xxl};
     align-items: center;
     justify-content: space-between;
