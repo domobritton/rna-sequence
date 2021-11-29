@@ -24,10 +24,10 @@ const Wrapper = styled(Box)`
     height: 100%;
     max-width: calc(100vw - ${theme.space.xxl});
     max-height: calc(100% - ${theme.space.xxl});
-    padding: ${theme.space.md} ${theme.space.md} ${theme.space.xxxl};
+    padding: ${theme.space.md} ${theme.space.md} ${theme.space.xxxl} 0;
 
     @media (max-width: 650px) {
-      padding-bottom: ${theme.space.md};
+      padding-bottom: 0;
     }
   `}
 `;
