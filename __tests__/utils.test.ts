@@ -1,6 +1,5 @@
-import {
+import getFormattedData, {
   getAnnotations,
-  getFormattedData,
   getTicks,
 } from '../src/pages/components/utils/index';
 import { RnaData } from '../src/pages/api/getRna/model';
