@@ -26,3 +26,5 @@ export const Tooltip = ({ payload, active, callback }) => {
     </Flex>
   );
 };
+
+export default Tooltip;

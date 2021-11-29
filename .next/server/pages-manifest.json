@@ -1,6 +1,16 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
+  "/api/getRna": "pages/api/getRna.js",
+  "/api/getRna/model": "pages/api/getRna/model.js",
+  "/api/hooks/useRnaApi": "pages/api/hooks/useRnaApi.js",
+  "/components/Chart": "pages/components/Chart.html",
+  "/components/ColorModeSwitcher": "pages/components/ColorModeSwitcher.html",
+  "/components/Loader": "pages/components/Loader.html",
+  "/components/Tooltip": "pages/components/Tooltip.html",
+  "/components": "pages/components.html",
+  "/components/utils": "pages/components/utils.html",
+  "/": "pages/index.html",
   "/_error": "pages/_error.js",
-  "/api/getRna": "pages/api/getRna.js"
+  "/404": "pages/404.html"
 }

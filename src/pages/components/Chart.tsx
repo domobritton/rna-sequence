@@ -15,13 +15,14 @@ import Div100vh from 'react-div-100vh';
 import { Tooltip as CustomTooltip } from './Tooltip';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import useRnaApi from '../api/hooks/useRnaApi';
-import { getAnnotations, getFormattedData, getTicks } from './utils';
+import getFormattedData, { getAnnotations, getTicks } from './utils';
 import { Loader } from './Loader';
 
 const Wrapper = styled(Box)`
   ${({ theme }) => `
     width: 100%;
     height: 100%;
+    max-width: calc(100vw - ${theme.space.xxl});
     max-height: calc(100% - ${theme.space.xxl});
     padding: ${theme.space.md} ${theme.space.md} ${theme.space.xxxl};
 
@@ -147,12 +148,7 @@ const RnaChart = () => {
       <YColumn>
         <Count>Count</Count>
       </YColumn>
-      <ChartColumn
-        flex='2 1 0'
-        alignItems='center'
-        justifyContent='center'
-        flexDirection='column'
-      >
+      <ChartColumn>
         <Wrapper>
           <ResponsiveContainer>
             <AreaChart data={formattedData}>
@@ -164,7 +160,13 @@ const RnaChart = () => {
               />
               <YAxis />
               <Tooltip
-                content={<CustomTooltip callback={handleGeneCallback} />}
+                content={
+                  <CustomTooltip
+                    callback={handleGeneCallback}
+                    payload={undefined}
+                    active={undefined}
+                  />
+                }
               />
               <Area
                 type='monotone'

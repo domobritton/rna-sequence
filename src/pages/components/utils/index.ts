@@ -12,8 +12,8 @@ type Ticks = {
   maxTick: number;
 };
 
-export const getFormattedData = (data: RnaData): FormattedData[] => {
-  if (!data) return null;
+const getFormattedData = (data: RnaData): FormattedData[] => {
+  if (!data || !data?.counts) return null;
   return data.counts.flatMap(({ count, name, range }) => {
     const countsRange = range[0];
     // assumes only 1 gene falls within the same range
@@ -48,7 +48,7 @@ export const getFormattedData = (data: RnaData): FormattedData[] => {
 };
 
 export const getAnnotations = (data: RnaData) => {
-  return data?.annotations.map(({ Gene }, idx) => ({
+  return data?.annotations?.map(({ Gene }, idx) => ({
     id: idx,
     annotation: Gene,
   }));
@@ -56,7 +56,7 @@ export const getAnnotations = (data: RnaData) => {
 
 export const getTicks = (data: RnaData): Ticks => {
   if (!data) return null;
-  const ticks = data.annotations.flatMap(({ range }) => [
+  const ticks = data?.annotations?.flatMap(({ range }) => [
     range[0].start,
     range[0].end,
   ]);
@@ -68,3 +68,5 @@ export const getTicks = (data: RnaData): Ticks => {
 
   return { ticks, maxTick };
 };
+
+export default getFormattedData;
