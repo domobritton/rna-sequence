@@ -1,7 +1,11 @@
 **RNA SEQUENCING**
 
 Data visualization built with Nextjs, Recharts, Fauna, and Chakra.
-Deployed to Vercel at https://rna-sequence-fty16y6fu-domobritton.vercel.app/
+Deployed to Vercel at https://rna-sequence-8rewaip49-domobritton.vercel.app/
+
+**PERFORMANCE**
+
+<img width="488" alt="Screen Shot 2021-11-29 at 12 33 38 PM" src="https://user-images.githubusercontent.com/16581660/143938944-2d8f2708-959a-4390-a35c-23ecd70472db.png">
 
 ***MOBILE***
 ![IMG_0549](https://user-images.githubusercontent.com/16581660/143824000-f5ae07fd-bffd-4f5b-bdbd-a1e39901bfa3.jpeg)
