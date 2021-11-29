@@ -1,7 +1,18 @@
 **RNA SEQUENCING**
 
-Data visualization built with Nextjs, Recharts, Fauna, and Chakra.
+Data visualization built with Nextjs (React framework), Recharts (data viz), Fauna (database), and Chakra (UI).
+
+Testing with Jest/React Testing Library.
+
+- Data query from Fauna via lambda function at `/src/pages/api/rna/index.ts` 
+- Fetched for Nextjs pages via `useRnaApi` hook at `/src/pages/api/hooks/useRnaApi.ts`
+
 Deployed to Vercel at https://rna-sequence-8rewaip49-domobritton.vercel.app/
+
+To get the frontend running locally:
+- Clone this repo
+- `npm install` to install all dependencies
+- `npm run dev` to start the local server
 
 **PERFORMANCE**
 
