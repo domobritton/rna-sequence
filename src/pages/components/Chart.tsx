@@ -157,7 +157,7 @@ const RnaChart = () => {
                 key={id}
                 annotation={annotation}
                 gene={gene}
-                theme={theme}
+                hoverColor={theme.colors.annotationBk}
               />
             ))}
           </Annotations>

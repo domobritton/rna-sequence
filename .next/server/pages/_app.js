@@ -1,72 +1,122 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/_app";
-exports.ids = ["pages/_app"];
+exports.id = 888;
+exports.ids = [888,134];
 exports.modules = {
 
-/***/ "./src/Chakra.tsx":
-/*!************************!*\
-  !*** ./src/Chakra.tsx ***!
-  \************************/
+/***/ 930:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Chakra\": () => (/* binding */ Chakra),\n/* harmony export */   \"getServerSideProps\": () => (/* binding */ getServerSideProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./theme */ \"./src/theme.tsx\");\n\n\n\nconst Chakra = ({ children , cookies  })=>{\n    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.ChakraProvider, {\n        theme: _theme__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n        colorModeManager: cookies ? (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.cookieStorageManager)(cookies) : _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.localStorageManager,\n        __source: {\n            fileName: \"/Users/domonicadams/Desktop/rna-seq-1/src/Chakra.tsx\",\n            lineNumber: 18,\n            columnNumber: 5\n        },\n        __self: undefined,\n        children: children\n    }));\n};\nfunction getServerSideProps({ req  }) {\n    return {\n        props: {\n            cookies: req.headers.cookie ?? ''\n        }\n    };\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvQ2hha3JhLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUl5QjtBQUlFO0FBT3BCLEtBQUssQ0FBQ0ksTUFBTSxJQUFJLENBQUMsQ0FBQ0MsUUFBUSxHQUFFQyxPQUFPLEVBQWMsQ0FBQyxHQUFLLENBQUM7SUFDN0QsTUFBTSxzRUFDSE4sNERBQWM7UUFDYkcsS0FBSyxFQUFFQSw4Q0FBSztRQUNaSSxnQkFBZ0IsRUFDZEQsT0FBTyxHQUFHTCxzRUFBb0IsQ0FBQ0ssT0FBTyxJQUFJSixpRUFBbUI7Ozs7Ozs7a0JBRzlERyxRQUFROztBQUdmLENBQUM7QUFJTSxTQUFTRyxrQkFBa0IsQ0FBQyxDQUFDLENBQ2xDQyxHQUFHLEVBQ3NCLENBQUMsRUFBeUMsQ0FBQztJQUNwRSxNQUFNLENBQUMsQ0FBQztRQUNOQyxLQUFLLEVBQUUsQ0FBQztZQUNOSixPQUFPLEVBQUVHLEdBQUcsQ0FBQ0UsT0FBTyxDQUFDQyxNQUFNLElBQUksQ0FBRTtRQUNuQyxDQUFDO0lBQ0gsQ0FBQztBQUNILENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ybmEtc2VxLy4vc3JjL0NoYWtyYS50c3g/NWUxMSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBDaGFrcmFQcm92aWRlcixcbiAgY29va2llU3RvcmFnZU1hbmFnZXIsXG4gIGxvY2FsU3RvcmFnZU1hbmFnZXIsXG59IGZyb20gJ0BjaGFrcmEtdWkvcmVhY3QnO1xuaW1wb3J0IHsgR2V0U2VydmVyU2lkZVByb3BzQ29udGV4dCB9IGZyb20gJ25leHQnO1xuaW1wb3J0IHsgUmVhY3ROb2RlIH0gZnJvbSAncmVhY3QnO1xuXG5pbXBvcnQgdGhlbWUgZnJvbSAnLi90aGVtZSc7XG5cbmludGVyZmFjZSBDaGFrcmFQcm9wcyB7XG4gIGNvb2tpZXM/OiBzdHJpbmc7XG4gIGNoaWxkcmVuOiBSZWFjdE5vZGU7XG59XG5cbmV4cG9ydCBjb25zdCBDaGFrcmEgPSAoeyBjaGlsZHJlbiwgY29va2llcyB9OiBDaGFrcmFQcm9wcykgPT4ge1xuICByZXR1cm4gKFxuICAgIDxDaGFrcmFQcm92aWRlclxuICAgICAgdGhlbWU9e3RoZW1lfVxuICAgICAgY29sb3JNb2RlTWFuYWdlcj17XG4gICAgICAgIGNvb2tpZXMgPyBjb29raWVTdG9yYWdlTWFuYWdlcihjb29raWVzKSA6IGxvY2FsU3RvcmFnZU1hbmFnZXJcbiAgICAgIH1cbiAgICA+XG4gICAgICB7Y2hpbGRyZW59XG4gICAgPC9DaGFrcmFQcm92aWRlcj5cbiAgKTtcbn07XG5cbmV4cG9ydCB0eXBlIFNlcnZlclNpZGVQcm9wczxUPiA9IHsgcHJvcHM6IFQgfSB8IFByb21pc2U8eyBwcm9wczogVCB9PjtcblxuZXhwb3J0IGZ1bmN0aW9uIGdldFNlcnZlclNpZGVQcm9wcyh7XG4gIHJlcSxcbn06IEdldFNlcnZlclNpZGVQcm9wc0NvbnRleHQpOiBTZXJ2ZXJTaWRlUHJvcHM8eyBjb29raWVzPzogc3RyaW5nIH0+IHtcbiAgcmV0dXJuIHtcbiAgICBwcm9wczoge1xuICAgICAgY29va2llczogcmVxLmhlYWRlcnMuY29va2llID8/ICcnLFxuICAgIH0sXG4gIH07XG59XG4iXSwibmFtZXMiOlsiQ2hha3JhUHJvdmlkZXIiLCJjb29raWVTdG9yYWdlTWFuYWdlciIsImxvY2FsU3RvcmFnZU1hbmFnZXIiLCJ0aGVtZSIsIkNoYWtyYSIsImNoaWxkcmVuIiwiY29va2llcyIsImNvbG9yTW9kZU1hbmFnZXIiLCJnZXRTZXJ2ZXJTaWRlUHJvcHMiLCJyZXEiLCJwcm9wcyIsImhlYWRlcnMiLCJjb29raWUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/Chakra.tsx\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ App)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "@chakra-ui/react"
+var react_ = __webpack_require__(174);
+;// CONCATENATED MODULE: external "next/head"
+const head_namespaceObject = require("next/head");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
+;// CONCATENATED MODULE: ./src/theme.tsx
+
+const chartTheme = {
+    colors: {
+        900: '#1a365d',
+        800: '#153e75',
+        700: '#2a69ac',
+        lavender: '#8884d8',
+        tooltip: 'rgba(128,128,128, 0.2)',
+        annotationBk: 'rgba(136, 132, 216, 0.4)',
+        boxShadow: 'rgba(0, 0, 0, 0.2)'
+    },
+    space: {
+        xxxl: '4rem',
+        xxl: '3rem',
+        xl: '2rem',
+        lg: '1.5rem',
+        md: '1rem',
+        sm: '0.5rem'
+    }
+};
+const config = {
+    initialColorMode: 'dark',
+    useSystemColorMode: false
+};
+const theme = (0,react_.extendTheme)({
+    config,
+    ...chartTheme
+});
+/* harmony default export */ const src_theme = (theme);
+
+;// CONCATENATED MODULE: ./src/Chakra.tsx
+
+
+
+const Chakra = ({ children , cookies  })=>{
+    return(/*#__PURE__*/ jsx_runtime_.jsx(react_.ChakraProvider, {
+        theme: src_theme,
+        colorModeManager: cookies ? (0,react_.cookieStorageManager)(cookies) : react_.localStorageManager,
+        children: children
+    }));
+};
+function getServerSideProps({ req  }) {
+    return {
+        props: {
+            cookies: req.headers.cookie ?? ''
+        }
+    };
+}
+
+;// CONCATENATED MODULE: ./src/pages/_app.tsx
+
+
+
+
+
+function App({ Component , pageProps  }) {
+    return(/*#__PURE__*/ jsx_runtime_.jsx(Chakra, {
+        cookies: pageProps.cookies,
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.ThemeProvider, {
+            theme: theme,
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx(react_.CSSReset, {
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("title", {
+                            children: "Rna Sequencing Count"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                            name: "description",
+                            content: "Count and range of Rna and gene ranges"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+                    ...pageProps
+                })
+            ]
+        })
+    }));
+};
+
 
 /***/ }),
 
-/***/ "./src/pages/_app.tsx":
-/*!****************************!*\
-  !*** ./src/pages/_app.tsx ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _Chakra__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Chakra */ \"./src/Chakra.tsx\");\n/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../theme */ \"./src/theme.tsx\");\n\n\n\n\n\nfunction App({ Component , pageProps  }) {\n    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Chakra__WEBPACK_IMPORTED_MODULE_3__.Chakra, {\n        cookies: pageProps.cookies,\n        __source: {\n            fileName: \"/Users/domonicadams/Desktop/rna-seq-1/src/pages/_app.tsx\",\n            lineNumber: 22,\n            columnNumber: 5\n        },\n        __self: this,\n        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.ThemeProvider, {\n            theme: _theme__WEBPACK_IMPORTED_MODULE_4__.theme,\n            __source: {\n                fileName: \"/Users/domonicadams/Desktop/rna-seq-1/src/pages/_app.tsx\",\n                lineNumber: 23,\n                columnNumber: 7\n            },\n            __self: this,\n            children: [\n                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.CSSReset, {\n                    __source: {\n                        fileName: \"/Users/domonicadams/Desktop/rna-seq-1/src/pages/_app.tsx\",\n                        lineNumber: 24,\n                        columnNumber: 9\n                    },\n                    __self: this\n                }),\n                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_2___default()), {\n                    __source: {\n                        fileName: \"/Users/domonicadams/Desktop/rna-seq-1/src/pages/_app.tsx\",\n                        lineNumber: 25,\n                        columnNumber: 9\n                    },\n                    __self: this,\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"title\", {\n                            __source: {\n                                fileName: \"/Users/domonicadams/Desktop/rna-seq-1/src/pages/_app.tsx\",\n                                lineNumber: 26,\n                                columnNumber: 11\n                            },\n                            __self: this,\n                            children: \"Rna Sequencing Count\"\n                        }),\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"meta\", {\n                            name: \"description\",\n                            content: \"Count and range of Rna and gene ranges\",\n                            __source: {\n                                fileName: \"/Users/domonicadams/Desktop/rna-seq-1/src/pages/_app.tsx\",\n                                lineNumber: 27,\n                                columnNumber: 11\n                            },\n                            __self: this\n                        })\n                    ]\n                }),\n                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Component, {\n                    ...pageProps,\n                    __source: {\n                        fileName: \"/Users/domonicadams/Desktop/rna-seq-1/src/pages/_app.tsx\",\n                        lineNumber: 32,\n                        columnNumber: 9\n                    },\n                    __self: this\n                })\n            ]\n        })\n    }));\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2FwcC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQUUwRDtBQUM5QjtBQUVNO0FBQ0Y7QUFhakIsUUFBUSxDQUFDSyxHQUFHLENBQUMsQ0FBQyxDQUFDQyxTQUFTLEdBQUVDLFNBQVMsRUFBaUIsQ0FBQyxFQUFFLENBQUM7SUFDckUsTUFBTSxzRUFDSEosMkNBQU07UUFBQ0ssT0FBTyxFQUFFRCxTQUFTLENBQUNDLE9BQU87Ozs7Ozs7d0ZBQy9CUiwyREFBYTtZQUFDSSxLQUFLLEVBQUVBLHlDQUFLOzs7Ozs7OztxRkFDeEJILHNEQUFROzs7Ozs7OztzRkFDUkMsa0RBQUk7Ozs7Ozs7OzZGQUNGTyxDQUFLOzs7Ozs7O3NDQUFDLENBQW9COzs2RkFDMUJDLENBQUk7NEJBQ0hDLElBQUksRUFBQyxDQUFhOzRCQUNsQkMsT0FBTyxFQUFDLENBQXdDOzs7Ozs7Ozs7O3FGQUduRE4sU0FBUzt1QkFBS0MsU0FBUzs7Ozs7Ozs7Ozs7QUFJaEMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3JuYS1zZXEvLi9zcmMvcGFnZXMvX2FwcC50c3g/ZjlkNiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgdHlwZSB7IE5leHRDb21wb25lbnRUeXBlLCBOZXh0UGFnZUNvbnRleHQgfSBmcm9tICduZXh0JztcbmltcG9ydCB0eXBlIHsgTmV4dFJvdXRlciB9IGZyb20gJ25leHQvcm91dGVyJztcbmltcG9ydCB7IFRoZW1lUHJvdmlkZXIsIENTU1Jlc2V0IH0gZnJvbSAnQGNoYWtyYS11aS9yZWFjdCc7XG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuXG5pbXBvcnQgeyBDaGFrcmEgfSBmcm9tICcuLi9DaGFrcmEnO1xuaW1wb3J0IHsgdGhlbWUgfSBmcm9tICcuLi90aGVtZSc7XG5cbmludGVyZmFjZSBDb29raWVzIHtcbiAgY29va2llcz86IHN0cmluZztcbn1cblxuZXhwb3J0IGludGVyZmFjZSBBcHBSZW5kZXJQcm9wcyB7XG4gIHBhZ2VQcm9wczogQ29va2llcyAmIG9iamVjdDtcbiAgZXJyPzogRXJyb3I7XG4gIENvbXBvbmVudDogTmV4dENvbXBvbmVudFR5cGU8TmV4dFBhZ2VDb250ZXh0LCBBcHBSZW5kZXJQcm9wcywgb2JqZWN0PjtcbiAgcm91dGVyOiBOZXh0Um91dGVyO1xufVxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBcHAoeyBDb21wb25lbnQsIHBhZ2VQcm9wcyB9OiBBcHBSZW5kZXJQcm9wcykge1xuICByZXR1cm4gKFxuICAgIDxDaGFrcmEgY29va2llcz17cGFnZVByb3BzLmNvb2tpZXN9PlxuICAgICAgPFRoZW1lUHJvdmlkZXIgdGhlbWU9e3RoZW1lfT5cbiAgICAgICAgPENTU1Jlc2V0IC8+XG4gICAgICAgIDxIZWFkPlxuICAgICAgICAgIDx0aXRsZT5SbmEgU2VxdWVuY2luZyBDb3VudDwvdGl0bGU+XG4gICAgICAgICAgPG1ldGFcbiAgICAgICAgICAgIG5hbWU9J2Rlc2NyaXB0aW9uJ1xuICAgICAgICAgICAgY29udGVudD0nQ291bnQgYW5kIHJhbmdlIG9mIFJuYSBhbmQgZ2VuZSByYW5nZXMnXG4gICAgICAgICAgLz5cbiAgICAgICAgPC9IZWFkPlxuICAgICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+XG4gICAgICA8L1RoZW1lUHJvdmlkZXI+XG4gICAgPC9DaGFrcmE+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiVGhlbWVQcm92aWRlciIsIkNTU1Jlc2V0IiwiSGVhZCIsIkNoYWtyYSIsInRoZW1lIiwiQXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIiwiY29va2llcyIsInRpdGxlIiwibWV0YSIsIm5hbWUiLCJjb250ZW50Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/_app.tsx\n");
-
-/***/ }),
-
-/***/ "./src/theme.tsx":
-/*!***********************!*\
-  !*** ./src/theme.tsx ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"theme\": () => (/* binding */ theme),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__);\n\nconst chartTheme = {\n    colors: {\n        900: '#1a365d',\n        800: '#153e75',\n        700: '#2a69ac',\n        lavender: '#8884d8',\n        tooltip: 'rgba(128,128,128, 0.2)',\n        annotationBk: 'rgba(136, 132, 216, 0.4)',\n        boxShadow: 'rgba(0, 0, 0, 0.2)'\n    },\n    space: {\n        xxxl: '4rem',\n        xxl: '3rem',\n        xl: '2rem',\n        lg: '1.5rem',\n        md: '1rem',\n        sm: '0.5rem'\n    }\n};\nconst config = {\n    initialColorMode: 'dark',\n    useSystemColorMode: false\n};\nconst theme = (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.extendTheme)({\n    config,\n    ...chartTheme\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (theme);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvdGhlbWUudHN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBMkQ7QUFFM0QsS0FBSyxDQUFDQyxVQUFVLEdBQUcsQ0FBQztJQUNsQkMsTUFBTSxFQUFFLENBQUM7UUFDUCxHQUFHLEVBQUUsQ0FBUztRQUNkLEdBQUcsRUFBRSxDQUFTO1FBQ2QsR0FBRyxFQUFFLENBQVM7UUFDZEMsUUFBUSxFQUFFLENBQVM7UUFDbkJDLE9BQU8sRUFBRSxDQUF3QjtRQUNqQ0MsWUFBWSxFQUFFLENBQTBCO1FBQ3hDQyxTQUFTLEVBQUUsQ0FBb0I7SUFDakMsQ0FBQztJQUNEQyxLQUFLLEVBQUUsQ0FBQztRQUNOQyxJQUFJLEVBQUUsQ0FBTTtRQUNaQyxHQUFHLEVBQUUsQ0FBTTtRQUNYQyxFQUFFLEVBQUUsQ0FBTTtRQUNWQyxFQUFFLEVBQUUsQ0FBUTtRQUNaQyxFQUFFLEVBQUUsQ0FBTTtRQUNWQyxFQUFFLEVBQUUsQ0FBUTtJQUNkLENBQUM7QUFDSCxDQUFDO0FBRUQsS0FBSyxDQUFDQyxNQUFNLEdBQWdCLENBQUM7SUFDM0JDLGdCQUFnQixFQUFFLENBQU07SUFDeEJDLGtCQUFrQixFQUFFLEtBQUs7QUFDM0IsQ0FBQztBQUVNLEtBQUssQ0FBQ0MsS0FBSyxHQUFHakIsNkRBQVcsQ0FBQyxDQUFDO0lBQUNjLE1BQU07T0FBS2IsVUFBVTtBQUFDLENBQUM7QUFFMUQsaUVBQWVnQixLQUFLLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ybmEtc2VxLy4vc3JjL3RoZW1lLnRzeD83YzlmIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGV4dGVuZFRoZW1lLCBUaGVtZUNvbmZpZyB9IGZyb20gJ0BjaGFrcmEtdWkvcmVhY3QnO1xuXG5jb25zdCBjaGFydFRoZW1lID0ge1xuICBjb2xvcnM6IHtcbiAgICA5MDA6ICcjMWEzNjVkJyxcbiAgICA4MDA6ICcjMTUzZTc1JyxcbiAgICA3MDA6ICcjMmE2OWFjJyxcbiAgICBsYXZlbmRlcjogJyM4ODg0ZDgnLFxuICAgIHRvb2x0aXA6ICdyZ2JhKDEyOCwxMjgsMTI4LCAwLjIpJyxcbiAgICBhbm5vdGF0aW9uQms6ICdyZ2JhKDEzNiwgMTMyLCAyMTYsIDAuNCknLFxuICAgIGJveFNoYWRvdzogJ3JnYmEoMCwgMCwgMCwgMC4yKScsXG4gIH0sXG4gIHNwYWNlOiB7XG4gICAgeHh4bDogJzRyZW0nLFxuICAgIHh4bDogJzNyZW0nLFxuICAgIHhsOiAnMnJlbScsXG4gICAgbGc6ICcxLjVyZW0nLFxuICAgIG1kOiAnMXJlbScsXG4gICAgc206ICcwLjVyZW0nLFxuICB9LFxufTtcblxuY29uc3QgY29uZmlnOiBUaGVtZUNvbmZpZyA9IHtcbiAgaW5pdGlhbENvbG9yTW9kZTogJ2RhcmsnLFxuICB1c2VTeXN0ZW1Db2xvck1vZGU6IGZhbHNlLFxufTtcblxuZXhwb3J0IGNvbnN0IHRoZW1lID0gZXh0ZW5kVGhlbWUoeyBjb25maWcsIC4uLmNoYXJ0VGhlbWUgfSk7XG5cbmV4cG9ydCBkZWZhdWx0IHRoZW1lO1xuIl0sIm5hbWVzIjpbImV4dGVuZFRoZW1lIiwiY2hhcnRUaGVtZSIsImNvbG9ycyIsImxhdmVuZGVyIiwidG9vbHRpcCIsImFubm90YXRpb25CayIsImJveFNoYWRvdyIsInNwYWNlIiwieHh4bCIsInh4bCIsInhsIiwibGciLCJtZCIsInNtIiwiY29uZmlnIiwiaW5pdGlhbENvbG9yTW9kZSIsInVzZVN5c3RlbUNvbG9yTW9kZSIsInRoZW1lIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/theme.tsx\n");
-
-/***/ }),
-
-/***/ "@chakra-ui/react":
-/*!***********************************!*\
-  !*** external "@chakra-ui/react" ***!
-  \***********************************/
+/***/ 174:
 /***/ ((module) => {
 
 module.exports = require("@chakra-ui/react");
 
 /***/ }),
 
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
-/***/ ((module) => {
-
-module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "react/jsx-runtime":
-/*!************************************!*\
-  !*** external "react/jsx-runtime" ***!
-  \************************************/
+/***/ 997:
 /***/ ((module) => {
 
 module.exports = require("react/jsx-runtime");
@@ -80,7 +130,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./src/pages/_app.tsx"));
+var __webpack_exports__ = (__webpack_exec__(930));
 module.exports = __webpack_exports__;
 
 })();

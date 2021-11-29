@@ -30,16 +30,16 @@ const Anno = styled(Flex)`
 interface AnnotationProps {
   annotation: string;
   gene: string;
-  theme: WithCSSVar<any>; //@TODO: type this correctly
+  hoverColor: string;
 }
 
-export const Annotation = ({ annotation, gene, theme }: AnnotationProps) => (
+export const Annotation = ({
+  annotation,
+  gene,
+  hoverColor,
+}: AnnotationProps) => (
   <AnnotationContainer>
-    <Anno
-      background={
-        gene === annotation ? theme.colors.annotationBk : 'transparent'
-      }
-    >
+    <Anno background={gene === annotation ? hoverColor : 'transparent'}>
       {annotation}
     </Anno>
   </AnnotationContainer>
