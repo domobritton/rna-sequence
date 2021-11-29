@@ -2,7 +2,7 @@ import getFormattedData, {
   getAnnotations,
   getTicks,
 } from '../src/pages/components/utils/index';
-import { RnaData } from '../src/pages/api/getRna/model';
+import { RnaData } from '../src/pages/api/rna/model';
 
 const annotations = {
   annotations: [

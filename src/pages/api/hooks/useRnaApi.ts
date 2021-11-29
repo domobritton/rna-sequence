@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { RnaData } from '../getRna/model';
+import { RnaData } from '../rna/model';
 
 const useRnaApi = () => {
   const [data, setData] = useState<RnaData>();
@@ -10,7 +10,7 @@ const useRnaApi = () => {
   const getData = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('api/getRna');
+      const response = await fetch('api/rna');
       const newData = await response.json();
       setData(newData[0].data);
     } catch (err) {

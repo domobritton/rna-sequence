@@ -9,14 +9,14 @@ import {
 } from 'recharts';
 import { Flex, Box, useTheme, Alert } from '@chakra-ui/react';
 import styled from '@emotion/styled';
-import { keyframes } from '@emotion/react';
 import Div100vh from 'react-div-100vh';
 
 import { Tooltip as CustomTooltip } from './Tooltip';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { Loader } from './Loader';
+import { Annotation } from './Annotation';
 import useRnaApi from '../api/hooks/useRnaApi';
 import getFormattedData, { getAnnotations, getTicks } from './utils';
-import { Loader } from './Loader';
 
 const Wrapper = styled(Box)`
   ${({ theme }) => `
@@ -78,31 +78,6 @@ const Annotations = styled(Flex)`
   }
 `;
 
-const AnnotationContainer = styled(Box)`
-  overflow: hidden;
-`;
-
-const slide = keyframes`
-  0% {
-    transform: translate3d(-100%, 0, 0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate3d(0%, 0, 0);
-    opacity: 1;
-  }
-`;
-
-const Annotation = styled(Flex)`
-  padding: ${({ theme }) => theme.space.sm} 0;
-  width: 10rem;
-  border-bottom: 2px solid cornflowerblue;
-  align-items: center;
-  justify-content: center;
-  animation: ${slide} 500ms ease-in;
-  transition: background 500ms ease-in-out;
-`;
-
 const RnaChart = () => {
   const [gene, setGene] = useState<string>('');
   const { data, isLoading, error } = useRnaApi();
@@ -144,7 +119,7 @@ const RnaChart = () => {
   }
 
   return (
-    <Flex>
+    <Flex as='section'>
       <YColumn>
         <Count>Count</Count>
       </YColumn>
@@ -178,17 +153,12 @@ const RnaChart = () => {
           </ResponsiveContainer>
           <Annotations>
             {annotations?.map(({ id, annotation }) => (
-              <AnnotationContainer key={id}>
-                <Annotation
-                  background={
-                    gene === annotation
-                      ? theme.colors.annotationBk
-                      : 'transparent'
-                  }
-                >
-                  {annotation}
-                </Annotation>
-              </AnnotationContainer>
+              <Annotation
+                key={id}
+                annotation={annotation}
+                gene={gene}
+                theme={theme}
+              />
             ))}
           </Annotations>
         </Wrapper>

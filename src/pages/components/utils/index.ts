@@ -1,4 +1,4 @@
-import { RnaData } from '../../api/getRna/model';
+import { RnaData } from '../../api/rna/model';
 
 type FormattedData = {
   xAxis: number;
@@ -12,7 +12,7 @@ type Ticks = {
   maxTick: number;
 };
 
-const getFormattedData = (data: RnaData): FormattedData[] => {
+export const getFormattedData = (data: RnaData): FormattedData[] => {
   if (!data || !data?.counts) return null;
   return data.counts.flatMap(({ count, name, range }) => {
     const countsRange = range[0];
